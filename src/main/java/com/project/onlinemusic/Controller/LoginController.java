@@ -36,7 +36,7 @@ public class LoginController {
 			LOGGER.info("online/api/login/"+username+":"+password+" method=[POST]");
 			if(username.equalsIgnoreCase("acc1") && password.equalsIgnoreCase("123")) {
 				session.setAttribute("username", username);
-				path=route.Dashboard();
+				path=route.landingpage();
 				return path;
 			} else {
 				modelMap.put("error", "Invalid access...");
